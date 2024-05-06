@@ -19,7 +19,7 @@ MongoClient.connect('mongodb+srv://user2000:test234@cluster0.ja3sz4z.mongodb.net
 
 })
 
-app.get('/',(req,res)=>{
+app.post('/',(req,res)=>{
  res.send('hello');
 })
 
