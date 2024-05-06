@@ -6,11 +6,12 @@ var dbConnection;
 
 app.use(express.json());
 
-app.use(cors({
+const corsConfig= {
     origin: ['https://taskmanager-625t.vercel.app'],
     methods: ['PUT', 'GET', 'POST', 'DELETE'],
     credential: true
-}))
+}
+app.options("", cors(corsConfig));
 
 MongoClient.connect('mongodb+srv://user2000:test234@cluster0.ja3sz4z.mongodb.net/Docker_test?retryWrites=true&w=majority&appName=Cluster0').then(client => {
 
