@@ -19,6 +19,10 @@ MongoClient.connect('mongodb+srv://user2000:test234@cluster0.ja3sz4z.mongodb.net
 
 })
 
+app.get('/api/get',(req,res)=>{
+ res.send('hello');
+})
+
 app.post('/api/save', (req, res) => {
 
     var background = ['https://plus.unsplash.com/premium_vector-1712694179179-f18fd818419d?bg=FFFFFF&w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGlrZXN8ZW58MHx8MHx8fDA%3D', 'https://plus.unsplash.com/premium_vector-1711987582179-5a4fdb1711d5?bg=FFFFFF&w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlrZXN8ZW58MHx8MHx8fDA%3D', 'https://plus.unsplash.com/premium_vector-1713941732591-60e71e84560b?bg=FFFFFF&w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlrZXN8ZW58MHx8MHx8fDA%3D', 'https://images.unsplash.com/photo-1500964757637-c85e8a162699?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGxpa2VzfGVufDB8fDB8fHww', 'https://plus.unsplash.com/premium_photo-1683275025970-dd2db5e4c84d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzd8fGxpa2VzfGVufDB8fDB8fHww'];
