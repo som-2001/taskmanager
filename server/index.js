@@ -11,7 +11,7 @@ const corsConfig = {
     methods: ["PUT", "GET", "POST", "DELETE"],
     credential: true
 }
-app.options("", cors(corsConfig));
+app.use(cors(corsConfig));
 
 MongoClient.connect('mongodb+srv://user2000:test234@cluster0.ja3sz4z.mongodb.net/Docker_test?retryWrites=true&w=majority&appName=Cluster0').then(client => {
 
