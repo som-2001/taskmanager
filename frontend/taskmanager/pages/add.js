@@ -27,7 +27,7 @@ const Add = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('taskmanager-khaki-five.vercel.app/api/register', formData);
+            const response = await axios.post('https://taskmanager-khaki-five.vercel.app/api/register', formData);
             setTimeout(()=>{
                 if(response.data==='successfully registered')
                 router.push('/login')
