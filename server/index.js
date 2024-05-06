@@ -7,7 +7,7 @@ var dbConnection;
 app.use(express.json());
 
 app.use(cors({
-    origin: 'taskmanager-625t.vercel.app',
+    origin: 'https://taskmanager-625t.vercel.app',
     methods: ['PUT', 'GET', 'POST', 'DELETE'],
     Credential: true
 }))
