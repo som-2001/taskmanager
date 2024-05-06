@@ -43,7 +43,7 @@ export default function BasicCard({ item }) {
   const handleDelete = (e) => {
 
     dispatch(deleteBody(e));
-    axios.post('taskmanager-lyart.vercel.app/api/delete', { id: e }).then(res => {
+    axios.post('taskmanager-khaki-five.vercel.app/api/delete', { id: e }).then(res => {
       alert('deleted');
     })
   }
@@ -52,14 +52,14 @@ export default function BasicCard({ item }) {
 
     console.log(e);
     dispatch(changeBody({ id: e, status: 'In Progress' }));
-    axios.post('taskmanager-lyart.vercel.app/api/change', { id: e, status: 'In Progress' }).then(res => {
+    axios.post('taskmanager-khaki-five.vercel.app/api/change', { id: e, status: 'In Progress' }).then(res => {
     })
 
   }
   const Done = (e) => {
 
     dispatch(changeBody({ id: e, status: 'Complete' }));
-    axios.post('taskmanager-lyart.vercel.app/api/change', { id: e, status: 'Complete' }).then(res => {
+    axios.post('taskmanager-khaki-five.vercel.app/api/change', { id: e, status: 'Complete' }).then(res => {
 
     })
   }
