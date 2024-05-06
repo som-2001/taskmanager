@@ -43,7 +43,7 @@ export default function BasicCard({ item }) {
   const handleDelete = (e) => {
 
     dispatch(deleteBody(e));
-    axios.post('taskmanager-khaki-five.vercel.app/api/delete', { id: e }).then(res => {
+    axios.post('https://taskmanager-khaki-five.vercel.app/api/delete', { id: e }).then(res => {
       alert('deleted');
     })
   }
