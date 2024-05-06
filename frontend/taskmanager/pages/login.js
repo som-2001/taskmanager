@@ -26,7 +26,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3001/api/login', formData);
+            const response = await axios.post('taskmanager-lyart.vercel.app/api/login', formData);
             console.log(response);
             if(response.data.message ==='Login successful')
                 {
